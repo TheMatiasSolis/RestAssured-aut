@@ -2,6 +2,10 @@
 
 BDD API automation framework built with Java, REST Assured, Cucumber, TestNG and Gradle.
 
+## Objective
+
+Provide a scalable and reusable API automation framework using BDD practices and REST API validations.
+
 ## Technologies
 
 - Java
@@ -13,25 +17,43 @@ BDD API automation framework built with Java, REST Assured, Cucumber, TestNG and
 - Log4j
 
 ## Project Structure
-      src
-       └── test
-            ├── java
-            │    └── automation
-            │         ├── cucumber
-            │         │    ├── features
-            │         │    ├── hook
-            │         │    ├── runner   
-            │         │    └── steps 
-            │         ├── generic
-            │         └── ProyectoPetStore
-            │              ├── collections
-            │              └── constants
-            └── resources
-                 ├── jsonBody
-                 ├── jsonEstructure
-                 └── jsonHeader
-```md id="9t7j07"
-## Features 
+
+```text
+src
+ └── test
+      ├── java
+      │    └── automation
+      │         ├── cucumber
+      │         │    ├── features
+      │         │    ├── hook
+      │         │    ├── runner
+      │         │    └── steps
+      │         ├── generic
+      │         └── petstore
+      │              ├── collections
+      │              └── constants
+      └── resources
+           ├── jsonBody
+           ├── jsonEstructure
+           └── jsonHeader
+```
+
+## Run Tests
+
+### Windows (PowerShell)
+
+```powershell
+.\gradlew test
+```
+
+### Git Bash / Linux / macOS
+
+```bash
+./gradlew test
+```
+
+## Features
+
 - Dynamic query parameters
 - Header management
 - JSON-driven test data
