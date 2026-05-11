@@ -8,4 +8,4 @@ Feature: updatePet
     When utilizo el json "bodyUpdatePet.json" para el body
     And realizo un request al servicio PETSTORE con el endpoint "update-pet"
     And visualizo statuscode 200
-    Then valido la estructura de respuesta es correcta con el json "EstructuraPet200.json"
+    Then valido la estructura de respuesta es correcta con el json "EstructuraPetFindByStatus200.json"

@@ -9,14 +9,14 @@ import org.testng.annotations.DataProvider;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/java/automation/cucumber/features/PetStore",
-        glue = {"autServiceTbk.cucumber.hook", "autServiceTbk.cucumber.steps"},
+        glue = {"automation.cucumber.hook", "automation.cucumber.steps"},
         plugin = {
                 "pretty",
                 "html:target/cucumber",
                 "json:target/cucumber.json",
                 "junit:build/test-results/test/xml/ejecucion.xml"
         },
-        tags = "@ObtenerPet"
+        tags = "@CrearPet"
 )
 
 public class CRunner extends AbstractTestNGCucumberTests {
